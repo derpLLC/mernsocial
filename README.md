@@ -31,9 +31,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Mern-Social][product-screenshot]](https://ibb.co/648GT6k)
+[![Mern-Social][Imgur]](https://i.imgur.com/hD20BQd.png)
 
-[url=https://ibb.co/648GT6k][img]https://i.ibb.co/GV9G8gq/Mern-Social-Initial.png[/img][/url]
 
 # Mern-Social
 
@@ -56,7 +55,7 @@ The Frontend is built out with the help of the following:
 * [Redux](https://react-redux.js.org/)
 * [Material UI](https://material-ui.com/)
 
-For the backend, along with [Node JS](https://nodejs.org/en/) the following framework along with database has been used:
+For the Backend, along with [Node JS](https://nodejs.org/en/) the following framework along with database has been used:
 * [ExpressJS](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 
