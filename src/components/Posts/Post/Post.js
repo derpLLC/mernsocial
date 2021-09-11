@@ -8,6 +8,8 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 import moment from 'moment' ; //moment is used for generating timestamps easily
 import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import { useHistory } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 import {deletePost, likePost,getPosts} from '../../../actions/posts';
 
@@ -22,8 +24,10 @@ const Post = ({post, setCurrentId}) => {
     const history = useHistory()
     const openPost = () => history.push(`/posts/${post._id}`)
 
+
     const [likes,setLikes] = useState(post?.likes);
 
+   
     const hasLikedPost = post.likes.find((like) => like === (userID))
 
 
@@ -59,7 +63,16 @@ const Post = ({post, setCurrentId}) => {
       //console.log('Image url ', post.selectedFile)
     
       return (
+        <>
+
+        <Toaster  containerStyle={{
+          top: 20,
+          left: 20,
+          bottom: 20,
+          right: 20,
+        }} />
         <Card className={classes.card} raised elevation={6}>
+
           <ButtonBase
             component="span"
             name="test"
@@ -99,10 +112,20 @@ const Post = ({post, setCurrentId}) => {
               <Likes />
             </Button>
             {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
-              <Button size="small" color="secondary" onClick={() => {dispatch(deletePost(post._id)); 
-                console.log('Post deleted!');
-                dispatch(getPosts());
-                //window.location.reload (); 
+              <Button size="small" color="secondary" onClick={() => {
+                toast.success('Deleting Post... It may take some seconds.', { duration: 2000,
+                  position: 'top-right'});
+                dispatch(deletePost(post._id)).then(() => {
+                  toast.success('Post Deleted successfully!',{ duration: 2000,
+                    position: 'top-right', icon: '👏',
+                    // Change colors of success/error/loading icon
+                    iconTheme: {
+                      primary: '#09BE53',
+                      secondary: '#BE0974',
+                    },});
+
+                }) 
+    
         
               
               }}>
@@ -111,6 +134,7 @@ const Post = ({post, setCurrentId}) => {
             )}
           </CardActions>
         </Card>
+        </>
       );
     };
     

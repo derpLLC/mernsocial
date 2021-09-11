@@ -110,12 +110,10 @@ export const updatePost = (id,post) => async(dispatch) => {
 export const deletePost = (id, post) => async(dispatch) => {
 
     try{
-        dispatch({type:START_LOADING})
 
         await Api.deletePost(id);
        dispatch({type:DELETE ,payload:id}); 
 
-       dispatch({type:END_LOADING})
 
     }
     catch(error)

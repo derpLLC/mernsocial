@@ -3,6 +3,8 @@ import { Typography,TextField,Button } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import useStyles from './styles'
 import {commentPost} from '../../actions/posts'
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Comments = ({post}) => {
 
@@ -19,11 +21,19 @@ const Comments = ({post}) => {
 
     
      const handleComment = async () => {
-        console.log('Woo woo')
+        //console.log('Woo woo')
+        if (!comment.trim()) {
+            return toast.error("Comment cannot be empty!")
+       }
+        
         const finalComment = `${user.result.name}:${comment}`
         const newComments = await dispatch(commentPost(finalComment,post._id));
         
         setComments(newComments)
+        toast.success('Comment made successfully!', {
+         duration: 3000,
+        position: 'top-right',
+        })
         setComment('');
 
         //Scroll down to the latest comment
@@ -32,7 +42,15 @@ const Comments = ({post}) => {
    
     return (
         <div>
+                    <Toaster  containerStyle={{
+          top: 20,
+          left: 20,
+          bottom: 20,
+          right: 20,
+        }} />
+
             <div className={classes.commentsOuterContainer}>
+
                 <div className={classes.commentsInnerContainer}>
                     <Typography gutterBottom variant="h6" >Comments</Typography>
                     {comments.map((c,i) => (
