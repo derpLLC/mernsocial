@@ -1,4 +1,74 @@
-# Getting Started with Create React App
+#Deployed Application Link 
+[https://mernsocial.netlify.app/]
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Mern-Social][Imgur]](https://i.imgur.com/hD20BQd.png)
+
+
+# Mern-Social
+
+Mern-Social as the name suggests, is a social media web application where people can post their memories and share them, for others to see and react.  Users have the ability to:
+
+* Create a Post
+* Delete a Post
+* Like and Comment on other's Posts
+* Fetch a particular Post based on title and tags
+
+
+| Mern-Social is still under development and some features may not be completely available yet. Feedbacks and Pull Requests are certainly welcome!
+
+
+
+### Built With
+
+The Frontend is built out with the help of the following:
+* [React](https://reactjs.org/)
+* [Redux](https://react-redux.js.org/)
+* [Material UI](https://material-ui.com/)
+
+For the Backend, along with [Node JS](https://nodejs.org/en/) the following framework along with database has been used:
+* [ExpressJS](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
+
+The Backend has been deployed with the help of [Heroku](https://www.heroku.com) while the Frontend is deployed on [Netlify](https://www.netlify.com).
+
+
+
+
+
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
