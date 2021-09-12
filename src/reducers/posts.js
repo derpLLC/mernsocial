@@ -20,7 +20,6 @@ export default (state = { isLoading: true, posts: [] }, action) => {
             return { ...state, posts: state.posts.filter((post) => post._id !== action.payload) };
 
         case FETCH_ALL:
-            console.log(action.payload.numberOfPages);
             return {
                 ...state,
                 posts: action.payload.data,
@@ -30,11 +29,9 @@ export default (state = { isLoading: true, posts: [] }, action) => {
 
 
         case FETCH_BY_SEARCH:
-            console.log('Post data: ', action.payload.data);
             return { ...state, posts: action.payload.data };
 
         case FETCH_POST:
-            console.log('Post data: ', action.payload);
             return { ...state, post: action.payload };
 
         case COMMENT:
@@ -50,7 +47,6 @@ export default (state = { isLoading: true, posts: [] }, action) => {
             }
 
         case CREATE:
-            console.log('Post created in Reducer : ', action.payload);
             return { ...state, posts: [...state.posts, action.payload] };
 
         default:

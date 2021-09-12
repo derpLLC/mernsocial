@@ -29,7 +29,6 @@ const handleSubmit = (e) => {
 
     e.preventDefault();
     //console.log('bhej diyaa!');
-    console.log(formData);
 
     if(isSignup){
 

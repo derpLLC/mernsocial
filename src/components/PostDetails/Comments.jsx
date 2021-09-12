@@ -21,7 +21,6 @@ const Comments = ({post}) => {
 
     
      const handleComment = async () => {
-        //console.log('Woo woo')
         if (!comment.trim()) {
             return toast.error("Comment cannot be empty!")
        }

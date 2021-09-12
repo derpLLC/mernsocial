@@ -12,7 +12,7 @@ const Paginate = ({page}) => {
 
     const { numberOfPages } = useSelector((state) => state.posts);
 
-    console.log('Number of pages ' , numberOfPages)
+    // console.log('Number of pages ' , numberOfPages)
 
     useEffect(() => {
         if(page)
