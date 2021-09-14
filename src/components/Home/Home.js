@@ -5,6 +5,8 @@ import Posts from '../Posts/Posts';
 import Form from '../Form/Form'
 import { useEffect } from 'react'
 import { getPosts, getPostsBySearch } from '../../actions/posts'
+import toast, { Toaster } from 'react-hot-toast';
+
 
 import { useDispatch } from 'react-redux'
 import Pagination from '../Posts/Pagination/Pagination'
@@ -39,6 +41,9 @@ const Home = () => {
 
 
     const searchPosts = () => {
+        if(!search.trim() && tags.length===0){
+            return toast.error("All Fields are required.");
+        }
         if (search.trim() || tags) {
             //dispatch -> fetch search post
             dispatch(getPostsBySearch({ search, tags: tags.join(',') }));

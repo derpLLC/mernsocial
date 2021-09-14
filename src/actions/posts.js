@@ -95,13 +95,12 @@ export const createPost = (post,history) => async(dispatch) => {
 export const updatePost = (id,post) => async(dispatch) => {
 
     try{
+        const { data } = await Api.updatePost(id, post);
 
-        const {data} = await Api.updatePost(id,post);
-
-        dispatch({type:UPDATE, payload:data})
+        dispatch({ type: UPDATE, payload: data });
+            
     }
-    catch(error)
-    {
+    catch(error){
         console.log(error)
     }
 }

@@ -9,6 +9,8 @@ import {useDispatch} from 'react-redux'
 import {useSelector} from 'react-redux'
 import { createPost } from '../../actions/posts';
 import { updatePost } from '../../actions/posts';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 //GET THE CURRENT ID OF THE POST WE ARE ON 
 
@@ -33,16 +35,32 @@ const Form = ({currentId, setCurrentId}) => {
 
     const handleSubmit =  async (e) => {
         e.preventDefault();
+        if (
+          postData.title === "" ||
+          postData.message === "" ||
+          postData.tags === "" ||
+          postData.selectedFile === ""
+        ) {
+         return toast.error("All Fields are required.");
+        }
+
+
         
-        if(currentId === 0){
-          dispatch(updatePost({...postData, name:user?.result?.name}));
-          
+        if(currentId){
+          dispatch(updatePost(currentId,{...postData, name:user?.result?.name})).then(() => {
+            toast.success("Post Updated Successfully!")
+            console.log('Post successfully updated!');
+  
+          });
+
         }
         else{
          dispatch(createPost({...postData, name:user?.result?.name},history));
  
         }
         clear();
+
+        
 
     }
     //Clearing the data on the form 
@@ -86,6 +104,13 @@ const Form = ({currentId, setCurrentId}) => {
 
     return (
 <Paper className={classes.paper} elevation={6}>
+<Toaster  containerStyle={{
+          top: 20,
+          left: 20,
+          bottom: 20,
+          right: 20,
+        }} />
+
     <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
       <Typography variant="h6">{currentId? 'Editing' : 'Creating'} a Memory</Typography>
       <TextField name="title" variant="outlined" label="Title" fullWidth  value={postData.title} onChange={(e) => setPostData({...postData, title: e.target.value})}/>

@@ -1,5 +1,6 @@
 import axios from 'axios'
-
+//
+//http://localhost:5000
 const API = axios.create({baseURL:'https://mernsocial-backend.herokuapp.com/'});
 //To send the token back to the backend so that the backend middleware can use it
 
@@ -22,7 +23,7 @@ export const fetchPostsBySearch = (searchQuery) => API.get(`/posts/search?search
 
 export const createPost =  (newPost) => API.post('/posts',newPost);
 
-export const updatePost = (id, updatedPost ) => {  API.patch(`/posts/${id}`, updatedPost);}
+export const updatePost = (id, updatedPost) => API.patch(`/posts/${id}`, updatedPost);
 
 export const deletePost = (id) => API.delete(`/posts/${id}`);
 

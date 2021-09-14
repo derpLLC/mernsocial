@@ -113,18 +113,12 @@ const Post = ({post, setCurrentId}) => {
             </Button>
             {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
               <Button size="small" color="secondary" onClick={() => {
-                toast.success('Deleting Post... It may take some seconds.', { duration: 2000,
-                  position: 'top-right'});
-                dispatch(deletePost(post._id)).then(() => {
-                  toast.success('Post Deleted successfully!',{ duration: 2000,
-                    position: 'top-right', icon: '👏',
-                    // Change colors of success/error/loading icon
-                    iconTheme: {
-                      primary: '#09BE53',
-                      secondary: '#BE0974',
-                    },});
-
-                }) 
+            const Promise = dispatch(deletePost(post._id));
+                  toast.promise(Promise, {
+                    loading:'Deleting Post... It may take some seconds',
+                    success:'Successfully deleted the post!',
+                    error:'Error! Could not delete post'
+                  })
     
         
               
