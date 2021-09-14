@@ -14,10 +14,10 @@
       </ul>
     </li>
     <li>
-      <a href="#contribute">Contribution</a>
+      <a href="#contribution">Contribution</a>
     </li>
     <li>
-      <a href="#howtoruntheproject">How to run the Project</a>
+      <a href="#how-to-run-the=project">How to run the Project</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -68,7 +68,7 @@ The Backend has been deployed with the help of [Heroku](https://www.heroku.com) 
 
 
 
-## ⭐ Contribution:
+### ⭐ Contribution:
 
 **1.** Fork [this](https://github.com/Sounav201/mernsocial-frontend) repository.
 Click on the <a href="https://github.com/Sounav201/mernsocial-frontend"><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> symbol at the top right corner.
@@ -117,7 +117,7 @@ git push
   ```
 
 
-## Getting Started with Create React App
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -193,6 +193,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-## License
+### License
 
 
