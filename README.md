@@ -2,32 +2,6 @@
 [https://mernsocial.netlify.app/]
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -40,6 +14,7 @@ Mern-Social as the name suggests, is a social media web application where people
 
 * Create a Post
 * Delete a Post
+* Update a Post
 * Like and Comment on other's Posts
 * Fetch a particular Post based on title and tags
 
@@ -67,8 +42,56 @@ The Backend has been deployed with the help of [Heroku](https://www.heroku.com) 
 
 
 
+### ⭐ Contribution:
 
-## Getting Started with Create React App
+**1.** Fork [this](https://github.com/Sounav201/mernsocial-frontend) repository.
+Click on the <a href="https://github.com/Sounav201/mernsocial-frontend"><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> symbol at the top right corner.
+
+**2.** Clone the forked repository.
+
+```bash
+git clone https://github.com/<your-github-username>/Athavani
+```
+**3.** Make a new branch 
+
+```bash
+#Make a new branch to avoid conflicts with the main branch of repository
+git checkout -b NewBranchName
+```
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
+```bash
+#Add changes to Index
+git add .
+
+#Commit to the local repo
+git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
+
+**9.** **Congratulations!** Sit and relax, you've made your contribution to [mernsocial-frontend](https://github.com/Sounav201/mernsocial-frontend) project.
+
+
+##  ▶️ How to Run the Project
+  **1.** Navigate to the project directory.
+  ```bash
+    npm install
+    npm run start
+    
+  ```
+
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -131,6 +154,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+
+
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
@@ -138,3 +164,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### License
+
+
