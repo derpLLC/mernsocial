@@ -1,46 +1,31 @@
-#Deployed Application Link 
-[https://mernsocial.netlify.app/]
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Mern-Social][Imgur]](https://i.imgur.com/hD20BQd.png)
-
-
 # Mern-Social
 
-Mern-Social as the name suggests, is a social media web application where people can post their memories and share them, for others to see and react.  Users have the ability to:
+<img src="assets/screenshots/cover.png?raw=true">
 
-* Create a Post
-* Delete a Post
-* Update a Post
-* Like and Comment on other's Posts
-* Fetch a particular Post based on title and tags
+Mern-Social as the name suggests, is a social media web application where people can post their memories and share them, for others to see and react. Users have the ability to:
 
+- Create a Post
+- Delete a Post
+- Update a Post
+- Like and Comment on other's Posts
+- Fetch a particular Post based on title and tags
 
-| Mern-Social is still under development and some features may not be completely available yet. Feedbacks and Pull Requests are certainly welcome!
-
-
+> _Note_: Mern-Social is still under development and some features may not be completely available yet. Feedbacks and Pull Requests are certainly welcome!.
 
 ### Built With
 
 The Frontend is built out with the help of the following:
-* [React](https://reactjs.org/)
-* [Redux](https://react-redux.js.org/)
-* [Material UI](https://material-ui.com/)
+
+- [React](https://reactjs.org/)
+- [Redux](https://react-redux.js.org/)
+- [Material UI](https://material-ui.com/)
 
 For the Backend, along with [Node JS](https://nodejs.org/en/) the following framework along with database has been used:
-* [ExpressJS](https://expressjs.com/)
-* [MongoDB](https://www.mongodb.com/)
+
+- [ExpressJS](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
 
 The Backend has been deployed with the help of [Heroku](https://www.heroku.com) while the Frontend is deployed on [Netlify](https://www.netlify.com).
-
-
-
-
-
-
 
 ### ⭐ Contribution:
 
@@ -52,7 +37,8 @@ Click on the <a href="https://github.com/Sounav201/mernsocial-frontend"><img src
 ```bash
 git clone https://github.com/<your-github-username>/Athavani
 ```
-**3.** Make a new branch 
+
+**3.** Make a new branch
 
 ```bash
 #Make a new branch to avoid conflicts with the main branch of repository
@@ -81,15 +67,15 @@ git push
 
 **9.** **Congratulations!** Sit and relax, you've made your contribution to [mernsocial-frontend](https://github.com/Sounav201/mernsocial-frontend) project.
 
+## ▶️ How to Run the Project
 
-##  ▶️ How to Run the Project
-  **1.** Navigate to the project directory.
-  ```bash
-    npm install
-    npm run start
-    
-  ```
+**1.** Navigate to the project directory.
 
+```bash
+  npm install
+  npm run start
+
+```
 
 ### Getting Started with Create React App
 
@@ -154,9 +140,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-
-
-
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
@@ -165,8 +148,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-
 ### License
-
-
