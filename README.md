@@ -30,7 +30,19 @@ The Backend has been deployed with the help of [Heroku](https://www.heroku.com) 
 
 ## Run Locally
 
-**1.** Navigate to the project directory.
+Clone the project
+
+```bash
+  git clone https://github.com/derpLLC/mernsocial-frontend
+```
+
+Go to the project directory
+
+```bash
+  cd mernsocial-frontend
+```
+
+Run the app
 
 ```bash
   npm install
@@ -52,7 +64,7 @@ symbol at the top right corner.
 **2.** Clone the forked repository.
 
 ```bash
-git clone https://github.com/derpLLC/mernsocial-frontend
+git clone https://github.com/<your-github-username>/mernsocial-frontend
 ```
 
 **3.** Make a new branch
