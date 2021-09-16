@@ -28,15 +28,31 @@ For the Backend, along with [Node JS](https://nodejs.org/en/) the following fram
 
 The Backend has been deployed with the help of [Heroku](https://www.heroku.com) while the Frontend is deployed on [Netlify](https://www.netlify.com).
 
-### ⭐ Contribution:
+## Run Locally
 
-**1.** Fork [this](https://github.com/Sounav201/mernsocial-frontend) repository.
-Click on the <a href="https://github.com/Sounav201/mernsocial-frontend"><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> symbol at the top right corner.
+**1.** Navigate to the project directory.
+
+```bash
+  npm install
+  npm run start
+
+```
+
+## Contributing
+
+Want to contribute? See if you can [find an issue](https://github.com/derpLLC/mernsocial-frontend/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) you wanna close, then send a PR!
+
+**1.** Fork [this](https://github.com/derpLLC/mernsocial-frontend) repository.
+Click on the
+<a href="https://github.com/derpLLC/mernsocial-frontend">
+<img src="https://img.icons8.com/ios/24/000000/code-fork.png">
+</a>
+symbol at the top right corner.
 
 **2.** Clone the forked repository.
 
 ```bash
-git clone https://github.com/<your-github-username>/Athavani
+git clone https://github.com/derpLLC/mernsocial-frontend
 ```
 
 **3.** Make a new branch
@@ -66,17 +82,7 @@ git push
 
 **8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to [mernsocial-frontend](https://github.com/Sounav201/mernsocial-frontend) project.
-
-## ▶️ How to Run the Project
-
-**1.** Navigate to the project directory.
-
-```bash
-  npm install
-  npm run start
-
-```
+**9.** **Congratulations!** Sit and relax, you've made your contribution to [mernsocial-frontend](https://github.com/derpLLC/mernsocial-frontend) project.
 
 ### Getting Started with Create React App
 
