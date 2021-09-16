@@ -12,6 +12,14 @@
 
 > _Note_: Mern-Social is still under development and some features may not be completely available yet. Feedbacks and Pull Requests are certainly welcome!.
 
+## Screenshots
+
+<p align="center">
+  <img width="100%" src="assets/screenshots/sign-in.png?raw=true">
+  <img width="100%" src="assets/screenshots/sign-up.png?raw=true">
+  <img width="100%" src="assets/screenshots/MernSocialV1.png?raw=true">
+</p>
+
 ## Plugins
 
 **Table of contents:**
