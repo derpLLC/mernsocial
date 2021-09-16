@@ -2,7 +2,7 @@
 
 <img src="assets/screenshots/cover.png?raw=true">
 
-Mern-Social as the name suggests, is a social media web application where people can post their memories and share them, for others to see and react. Users have the ability to:
+[Mern-Social](https://mernsocial.netlify.app/) as the name suggests, is a social media web application where people can post their memories and share them, for others to see and react. Users have the ability to:
 
 - Create a Post
 - Delete a Post
@@ -12,8 +12,9 @@ Mern-Social as the name suggests, is a social media web application where people
 
 > _Note_: Mern-Social is still under development and some features may not be completely available yet. Feedbacks and Pull Requests are certainly welcome!.
 
-### Built With
+## Plugins
 
+**Table of contents:**
 The Frontend is built out with the help of the following:
 
 - [React](https://reactjs.org/)
