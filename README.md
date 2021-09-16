@@ -1,4 +1,4 @@
-# Mern-Social
+# [Mern-Social](https://mernsocial.netlify.app/)
 
 <img src="assets/screenshots/cover.png?raw=true">
 
