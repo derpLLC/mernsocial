@@ -82,9 +82,9 @@ git clone https://github.com/<your-github-username>/mernsocial-frontend
 git checkout -b NewBranchName
 ```
 
-**5.** Make changes in source code.
+**4.** Make changes in source code.
 
-**6.** Stage your changes and commit
+**5.** Stage your changes and commit
 
 ```bash
 #Add changes to Index
@@ -94,15 +94,15 @@ git add .
 git commit -m "<your_commit_message>"
 ```
 
-**7.** Push your local commits to the remote repo.
+**6.** Push your local commits to the remote repo.
 
 ```bash
 git push
 ```
 
-**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
+**7.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to [mernsocial-frontend](https://github.com/derpLLC/mernsocial-frontend) project.
+**8.** **Congratulations!** Sit and relax, you've made your contribution to [mernsocial-frontend](https://github.com/derpLLC/mernsocial-frontend) project.
 
 ## License
 
