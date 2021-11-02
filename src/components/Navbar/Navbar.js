@@ -4,9 +4,6 @@ import { AppBar, Avatar, Typography, Button, Toolbar} from '@material-ui/core'
 import useStyles from './styles';
 import {useHistory} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
-import memoriesLogo from '../../images/memoriesLogo.png';
-import memoriesText from '../../images/memoriesText.png';
-import mernsocialCustomLogo from '../../images/MernSocialLogoBig.png'
 import mernSocialLogo from '../../images/MernSocial.png'
 import decode from 'jwt-decode'
 
